@@ -16,7 +16,7 @@
 To install this theme, simply use the `omarchy-theme-install` command:
 
 ```sh
-omarchy-theme-install https://github.com/ankur311sudo/gruvu.git
+omarchy-theme-install https://github.com/tiaguinho-code/tagruvu
 ```
 ## Neovim
 <img width="2240" height="1400" alt="screenshot-2026-01-04_14-05-28" src="https://github.com/user-attachments/assets/2d61de11-4236-4f3d-8e5a-ae766cbadf96" />
