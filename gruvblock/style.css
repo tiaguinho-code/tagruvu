@@ -154,3 +154,18 @@ window#waybar {
   border: 2pt solid #83a598;
   padding: 0 7.5pt;
 }
+
+/* Minimal clickable behavior: make modules and generated buttons clickable */
+/* Minimal clickable behavior: use only Waybar-safe properties */
+#clock,
+#network {
+}
+
+/* Keep button visuals minimal to avoid unsupported properties */
+#clock button,
+#network button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: inherit;
+}

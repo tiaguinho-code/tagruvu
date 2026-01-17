@@ -97,11 +97,13 @@
   },
   "disk": {
     "format": "<span color='#202020' bgcolor='#ea6962' >  </span> {free}",
+    "on-click": "omarchy-launch-or-focus-tui dua i",
     "interval": 20
   },
   "cpu": {
     "format": "<span color='#202020' bgcolor='#e78a4e' >  </span> {usage}%",
     "tooltip": false,
+    "on-click": "omarchy-launch-or-focus-tui btop",
     "interval": 1
   },
   // "custom/cpu_temp": {
@@ -126,7 +128,7 @@
     // "on-click-right": "~/.config/custom_scripts/wlsunset.sh"
   },
   "custom/memory": {
-     "on-click": "omarchy-launch-or-focus-tui btop",
+    "on-click": "omarchy-launch-or-focus-tui btop",
     // "exec": "~/.config/waybar/scripts/memory_usage.sh",
     "interval": 2,
     // "return-type": "json",
@@ -146,6 +148,7 @@
     "max-volume": 130
   },
   "battery#bat2": {
+    "on-click": "omarchy-launch-tui battop",
     "bat": "BAT2"
   },
   "battery": {
@@ -176,6 +179,7 @@
     "format-charging-critical": "<span color='#202020' bgcolor='#cc241d' > 󰢜 </span> {capacity}%",
     "format-plugged": "<span color='#202020' bgcolor='#689d6a' > 󰂅 </span> {capacity}%",
     "format-alt": "<span color='#202020' bgcolor='#689d6a' > 󱧥 </span> {time}",
+    "on-click": "omarchy-launch-tui battop",
     "tooltip": false
   },
   "network": {
@@ -190,6 +194,7 @@
       "󰤥",
       "󰤨"
     ],
+    "on-click": "omarchy-launch-wifi",
     "tooltip": false,
     "states": {
       "normal": 25
