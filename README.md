@@ -22,7 +22,6 @@ omarchy-theme-install https://github.com/tiaguinho-code/tagruvu
 <img width="2240" height="1400" alt="screenshot-2026-01-04_14-05-28" src="https://github.com/user-attachments/assets/2d61de11-4236-4f3d-8e5a-ae766cbadf96" />
 
 ## Walker previews 
-<img width="2240" height="1397" alt="screenshot-2026-01-02_15-11-34" src="https://github.com/user-attachments/assets/82ca06d4-3543-4ed6-a6e0-bc706d5246f8" />
 <img width="2237" height="1397" alt="screenshot-2026-01-02_15-12-42" src="https://github.com/user-attachments/assets/84619f95-ccda-47a4-b430-c338e6938d29" />
 
 ## Waybar Configuration
