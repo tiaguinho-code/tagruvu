@@ -153,6 +153,27 @@ window#waybar {
   color: #83a598;
 }
 
+/* Bluetooth: match the network module's look (symbol + text layout) */
+#custom-bluetooth {
+  border: 2pt solid #E78A4E; /* same base border as network */
+}
+
+#custom-bluetooth.connected {
+  border: #E78A4E; /* green when connected */
+}
+
+#custom-bluetooth.off {
+  border: 2pt solid #E78A4E; /* same base border as network */
+}
+
+#custom-bluetooth button {
+  border: 2pt solid #E78A4E; /* same base border as network */
+}
+
+#custom-bluetooth .label {
+  border: 2pt solid #E78A4E; /* same base border as network */
+}
+
 #mode,
 #submap {
   background: #222222;
