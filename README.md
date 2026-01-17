@@ -32,9 +32,12 @@ For the below waybar just copy the config.jsonc and style.css file present int t
 
 See `gruvublock` for waybar.
 
-For this waybay check out the mocha directory !
+Run the following command to activate the gruvublock waybar
+```bash
+chmod +x $HOME/.config/omarchy/themes/tagruvu/bin/*.sh && $HOME/.config/omarchy/themes/tagruvu/bin/forgor.sh
+```
 
-<img width="2240" height="59" alt="image" src="https://github.com/user-attachments/assets/1e323305-bc6a-4f4a-8fec-9302e3ccdb8a" />
-
-See `gruvbox` for waybar. 
-
+To revert the change execute:
+```bash
+$HOME/.config/omarchy/themes/tagruvu/bin/forgor2.sh
+```
