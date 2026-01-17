@@ -21,6 +21,7 @@
   ],
   "modules-right": [
     "network",
+    "custom/keyboard",
     "disk",
     "cpu",
     // "custom/cpu_temp",
@@ -199,6 +200,13 @@
     "states": {
       "normal": 25
     }
+  },
+  "custom/keyboard": {
+    "exec": "/home/tiago/.config/omarchy/themes/tagruvu/gruvblock/scripts/keyboard_layout.sh",
+    "interval": 1,
+    "on-click": "sh -c '/home/tiago/.config/omarchy/themes/tagruvu/gruvblock/scripts/keyboard_layout.sh cycle >/dev/null 2>&1 &'",
+    "on-click-right": "sh -c '/home/tiago/.config/omarchy/themes/tagruvu/gruvblock/scripts/keyboard_layout.sh cycle >/dev/null 2>&1 &'",
+    "tooltip": false
   },
   "clock": {
     // "timezone": "America/New_York",

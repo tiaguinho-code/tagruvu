@@ -147,6 +147,12 @@ window#waybar {
   border: 2pt solid #d3869b;
 }
 
+#custom-keyboard {
+  border: 2pt solid #83a598;
+  padding: 0 4pt;
+  color: #83a598;
+}
+
 #mode,
 #submap {
   background: #222222;
