@@ -56,27 +56,27 @@ fi
 
 # If no connected devices, but adapter reports Powered: yes, show ON (no connections)
 if [ "$powered" = "yes" ]; then
-  printf "%s\n" "<span color='${LEFT_FG}' bgcolor='${LEFT_BG}'> ${ICON_ON} </span> <span color='${RIGHT_FG}' bgcolor='${RIGHT_BG}'> ON </span>"
+  printf "%s\n" "<span color='${LEFT_FG}' bgcolor='${LEFT_BG}'> ${ICON_ON} </span> <span> ON </span>"
   exit 0
 fi
 
-# Fallback: check rfkill to detect if bluetooth is blocked/unavailable.
-if command -v rfkill >/dev/null 2>&1; then
-  blk=$(rfkill list bluetooth 2>/dev/null | awk -F': ' '/Soft blocked/ {print $2; exit}') || true
-  if [ "$blk" = "no" ]; then
-    printf "%s\n" "󰂱"
-    exit 0
-  fi
-fi
+# # Fallback: check rfkill to detect if bluetooth is blocked/unavailable.
+# if command -v rfkill >/dev/null 2>&1; then
+#   blk=$(rfkill list bluetooth 2>/dev/null | awk -F': ' '/Soft blocked/ {print $2; exit}') || true
+#   if [ "$blk" = "no" ]; then
+#     printf "%s\n" "󰂱"
+#     exit 0
+#   fi
+# fi
 
-# Fallback: check systemd service state
-if command -v systemctl >/dev/null 2>&1; then
-  if systemctl is-active --quiet bluetooth 2>/dev/null; then
-    printf "%s\n" "󰂱"
-    exit 0
-  fi
-fi
+## Fallback: check systemd service state
+#if command -v systemctl >/dev/null 2>&1; then
+#  if systemctl is-active --quiet bluetooth 2>/dev/null; then
+#    printf "%s\n" "󰂱"
+#    exit 0
+#  fi
+#fi
 
 # Default: OFF
-printf "%s\n" "<span color='${LEFT_FG}' bgcolor='${LEFT_BG}'> ${ICON_OFF} </span> <span color='${RIGHT_FG}' bgcolor='${RIGHT_BG}'> OFF </span>"
+printf "%s\n" "<span color='${LEFT_FG}' bgcolor='${LEFT_BG}'> ${ICON_OFF} </span> <span> OFF </span>"
 exit 0
