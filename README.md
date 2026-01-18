@@ -30,14 +30,10 @@ For the below waybar just copy the config.jsonc and style.css file present int t
 
 <img width="2240" height="52" alt="screenshot-2026-01-02_15-00-03" src="https://github.com/user-attachments/assets/412258f5-c5de-4b22-a0b3-e6bb041ec340" />
 
-See `gruvublock` for waybar.
-
-Run the following command to activate the gruvublock waybar
+#### Gruvublock Waybar
+Run the following command to activate the gruvublock waybar.
 ```bash
-chmod +x $HOME/.config/omarchy/themes/tagruvu/bin/*.sh && $HOME/.config/omarchy/themes/tagruvu/bin/forgor.sh
+chmod +x $HOME/.config/omarchy/themes/tagruvu/bin/*.sh && $HOME/.config/omarchy/themes/tagruvu/bin/activate_block_waybar.sh
 ```
+And then go into the menu -> update -> config -> waybar.
 
-To revert the change execute:
-```bash
-$HOME/.config/omarchy/themes/tagruvu/bin/forgor2.sh
-```
