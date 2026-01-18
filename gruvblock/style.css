@@ -34,6 +34,8 @@ window#waybar {
 #custom-memory,
 #pulseaudio,
 #pulseaudio.muted,
+#custom-mic,
+#custom-camera,
 #battery,
 #battery.critical,
 #battery.warning,
@@ -132,6 +134,14 @@ window#waybar {
 #pulseaudio.muted {
   border: 2pt solid #ea6962;
   color: #ea6962;
+}
+
+#custom-mic {
+  border: 2pt solid #689d6a;
+}
+
+#custom-camera {
+  border: 2pt solid #83a598;
 }
 
 #battery {
