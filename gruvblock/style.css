@@ -39,6 +39,7 @@ window#waybar {
 #battery.warning,
 #network,
 #custom-keyboard,
+#custom-study,
 #bluetooth,
 #clock {
   padding: 0 1.5pt;
@@ -158,6 +159,9 @@ window#waybar {
   /*color: #83a598;*/
 }
 
+#custom-study {
+  border: 2pt solid #8ec07c;
+}
 
 #mode,
 #submap {
@@ -172,6 +176,7 @@ window#waybar {
 #clock,
 #bluetooth,
 #custom-keyboard,
+#custom-study,
 #network {
 }
 
@@ -179,6 +184,7 @@ window#waybar {
 #clock button,
 #bluetooth button,
 #custom-keyboard button,
+#custom-study button,
 #network button {
   background: transparent;
   border: none;

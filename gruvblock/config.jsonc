@@ -12,11 +12,12 @@
     "sway/window",
     "hyprland/workspaces",
     "hyprland/window",
-    "tray",
-    "sway/mode"
+    "tray"
     // "hyprland/submap"
+    //"sway/mode"
   ],
   "modules-center": [
+    //"custom/study",
     "clock"
   ],
   "modules-right": [
@@ -103,10 +104,26 @@
     "interval": 20
   },
   "cpu": {
-    "format": "<span color='#202020' bgcolor='#e78a4e' >  </span> {usage}%",
+    "format": "<span color='#202020' bgcolor='#e78a4e' >  </span> <span color='#e78a4e'>{icon}</span>",
+    "format-icons": [
+      "▁",
+      "▂",
+      "▃",
+      "▄",
+      "▅",
+      "▆",
+      "▇",
+      "█",
+      "█",
+      "█"
+    ],
     "tooltip": false,
     "on-click": "omarchy-launch-or-focus-tui btop",
-    "interval": 1
+    "interval": 1,
+    "states": {
+      "warning": 50,
+      "critical": 80
+    }
   },
   // "custom/cpu_temp": {
   //   // "exec": "~/.config/waybar/scripts/waybarTemp.sh",
@@ -218,6 +235,11 @@
     "format-no-controller": "",
     "tooltip-format": "Devices connected: {num_connections}",
     "on-click": "omarchy-launch-bluetooth"
+  },
+  "custom/study": {
+    "format": "<span color='#202020' bgcolor='#8ec07c' > 󰂺 </span>",
+    "on-click": "sh -c '$HOME/.config/omarchy/themes/tagruvu/gruvblock/scripts/open_apps.sh &'",
+    "tooltip": false
   },
   "clock": {
     // "timezone": "America/New_York",
