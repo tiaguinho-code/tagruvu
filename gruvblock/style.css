@@ -38,6 +38,7 @@ window#waybar {
 #battery.critical,
 #battery.warning,
 #network,
+#custom-weather,
 #custom-vpn,
 #custom-keyboard,
 #custom-study,
@@ -148,6 +149,10 @@ window#waybar {
 }
 
 #network {
+  border: 2pt solid #d3869b;
+}
+
+#custom-weather {
   border: 2pt solid #d3869b;
 }
 

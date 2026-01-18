@@ -13,6 +13,7 @@
     "hyprland/workspaces",
     "hyprland/window",
     "custom/keyboard",
+    "custom/weather",
     "tray"
     // "hyprland/submap"
     //"sway/mode"
@@ -219,6 +220,13 @@
     "states": {
       "normal": 25
     }
+  },
+  "custom/weather": {
+    "exec": "$HOME/.config/omarchy/themes/tagruvu/gruvblock/scripts/weather.sh",
+    "format": "<span color='#202020' bgcolor='#d3869b'> 🌤️ </span> {}°C",
+    "interval": 600,
+    "tooltip": false,
+    "on-click": "xdg-open https://weather.com"
   },
   "custom/vpn": {
     "exec": "$HOME/.config/omarchy/themes/tagruvu/gruvblock/scripts/vpn_status.sh",
