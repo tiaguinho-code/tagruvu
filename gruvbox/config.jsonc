@@ -25,7 +25,9 @@
         "cpu",
         "memory",
         "backlight",
-        "battery"
+      "battery",
+      "power-profiles-daemon",
+      "custom/power"
         // "clock",
     ],
     "hyprland/workspaces": {
@@ -130,6 +132,12 @@
     "on-click": "pactl -- set-sink-mute 0 toggle",
     "tooltip": true,
     "tooltip-format": "当前系统声音: {volume}%"
+  },
+
+  "custom/power": {
+    "format": "",
+    "on-click": "omarchy-menu System",
+    "tooltip": false
   },
 
 }

@@ -32,7 +32,9 @@
     "backlight",
     // "custom/memory",
     "pulseaudio",
-    "battery"
+    "battery",
+    "power-profiles-daemon",
+    "custom/power"
   ],
   "custom/rofi": {
     "format": "<span font='omarchy'></span>",
@@ -263,5 +265,21 @@
     "format": "<span color='#202020' bgcolor='#8ec07c' >  </span> {:%a %d | %H:%M}",
     "tooltip": false,
     "interval": 1
+  },
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip": false,
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "format-icons": {
+      "default": "  ",
+      "performance": "  ",
+      "balanced": "  ",
+      "power-saver": "  "
+    }
+  },
+  "custom/power": {
+    "format": "<span color='#202020' bgcolor='#EA6962' >  </span>",
+    "on-click": "omarchy-menu System",
+    "tooltip": false
   }
 }

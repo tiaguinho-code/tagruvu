@@ -43,8 +43,10 @@ window#waybar {
 #custom-keyboard,
 #custom-study,
 #bluetooth,
-#clock {
-  padding: 0 1.5pt;
+#clock,
+#custom-power,
+#power-profiles-daemon {
+  padding:0 2pt;
 }
 
 #custom-rofi {
@@ -171,6 +173,26 @@ window#waybar {
 
 #custom-study {
   border: 2pt solid #8ec07c;
+}
+
+#custom-power {
+  border: 2pt solid #EA6962;
+}
+
+#power-profiles-daemon {
+  border: 2pt solid #d3869b;
+}
+
+#power-profiles-daemon.performance {
+  border: 2pt solid #e78a4e;
+}
+
+#power-profiles-daemon.balanced {
+  border: 2pt solid #d3869b;
+}
+
+#power-profiles-daemon.power-saver {
+  border: 2pt solid #689d6a;
 }
 
 #mode,
