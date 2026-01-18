@@ -13,15 +13,15 @@
     "hyprland/workspaces",
     "hyprland/window",
     "tray",
-    // "sway/mode",
-    "hyprland/submap"
+    "sway/mode"
+    // "hyprland/submap"
   ],
   "modules-center": [
     "clock"
   ],
   "modules-right": [
     "network",
-    "custom/bluetooth",
+    "bluetooth",
     "custom/keyboard",
     "disk",
     "cpu",
@@ -126,7 +126,7 @@
   "backlight": {
     // "device": "acpi_video1",
     "format": "<span color='#202020' bgcolor='#f6c657' > 󰞏 </span> {percent}%",
-    "tooltip": false,
+    "tooltip": false
     // "on-click-right": "~/.config/custom_scripts/wlsunset.sh"
   },
   "custom/memory": {
@@ -135,7 +135,7 @@
     "interval": 2,
     // "return-type": "json",
     // "format": " <span color='#89b4fa' font='Font Awesome 6 Free'></span>  {percentage}%",
-    "format": "<span color='#202020' bgcolor='#458588' >  </span>  {percentage}%"
+    "format": "<span color='#202020' bgcolor='#458588' >   </span>  {percentage}%"
   },
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
@@ -203,18 +203,21 @@
     }
   },
   "custom/keyboard": {
-    "exec": "/home/tiago/.config/omarchy/themes/tagruvu/gruvblock/scripts/keyboard_layout.sh",
+    "exec": "$HOME/.config/omarchy/themes/tagruvu/gruvblock/scripts/keyboard_layout.sh",
+    "format": "<span color='#202020' bgcolor='#689d6a'> 󰌌 </span> {}",
     "interval": 1,
-    "on-click": "sh -c '/home/tiago/.config/omarchy/themes/tagruvu/gruvblock/scripts/keyboard_layout.sh cycle >/dev/null 2>&1 &'",
-    "on-click-right": "sh -c '/home/tiago/.config/omarchy/themes/tagruvu/gruvblock/scripts/keyboard_layout.sh cycle >/dev/null 2>&1 &'",
+    "on-click": "sh -c '$HOME/.config/omarchy/themes/tagruvu/gruvblock/scripts/keyboard_layout.sh cycle >/dev/null 2>&1 &'",
+    "on-click-right": "sh -c '$HOME/.config/omarchy/themes/tagruvu/gruvblock/scripts/keyboard_layout.sh cycle >/dev/null 2>&1 &'",
     "tooltip": false
   },
-  "custom/bluetooth": {
-    "exec": "/home/tiago/.config/omarchy/themes/tagruvu/gruvblock/scripts/bluetooth_state.sh",
-    "format": "{}",
-    "interval": 6,
-    "on-click": "omarchy-launch-bluetooth",
-    "tooltip": false
+  "bluetooth": {
+    "format": "<span color='#202020' bgcolor='#E78A4E'>  </span> {num_connections} ",
+    "format-off": "<span color='#202020' bgcolor='#E78A4E'> 󰂲 </span> 󰒲 ",
+    "format-disabled": "<span color='#202020' bgcolor='#E78A4E'> 󰂲 </span> 󰒲 ",
+    "format-connected": "<span color='#202020' bgcolor='#E78A4E'> 󰂱 </span> {num_connections} ",
+    "format-no-controller": "",
+    "tooltip-format": "Devices connected: {num_connections}",
+    "on-click": "omarchy-launch-bluetooth"
   },
   "clock": {
     // "timezone": "America/New_York",

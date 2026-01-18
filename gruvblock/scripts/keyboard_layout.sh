@@ -44,4 +44,11 @@ else
     }' | cut -c1-2 | tr 'a-z' 'A-Z') || true
 fi
 
-printf "%s %s\n" "" "${lang:---}"
+# Hardcoded replacements
+case "$lang" in
+  PO) lang="BR" ;;
+  GE) lang="DE" ;;
+  KO) lang="KR" ;;
+esac
+
+printf "%s\n" "${lang:---}"

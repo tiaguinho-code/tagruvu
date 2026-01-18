@@ -38,6 +38,8 @@ window#waybar {
 #battery.critical,
 #battery.warning,
 #network,
+#custom-keyboard,
+#bluetooth,
 #clock {
   padding: 0 1.5pt;
 }
@@ -147,32 +149,15 @@ window#waybar {
   border: 2pt solid #d3869b;
 }
 
+#bluetooth {
+  border: 2pt solid #E78A4E;
+}
+
 #custom-keyboard {
   border: 2pt solid #83a598;
-  padding: 0 4pt;
-  color: #83a598;
+  /*color: #83a598;*/
 }
 
-/* Bluetooth: match the network module's look (symbol + text layout) */
-#custom-bluetooth {
-  border: 2pt solid #E78A4E; /* same base border as network */
-}
-
-#custom-bluetooth.connected {
-  border: #E78A4E; /* green when connected */
-}
-
-#custom-bluetooth.off {
-  border: 2pt solid #E78A4E; /* same base border as network */
-}
-
-#custom-bluetooth button {
-  border: 2pt solid #E78A4E; /* same base border as network */
-}
-
-#custom-bluetooth .label {
-  border: 2pt solid #E78A4E; /* same base border as network */
-}
 
 #mode,
 #submap {
@@ -185,11 +170,15 @@ window#waybar {
 /* Minimal clickable behavior: make modules and generated buttons clickable */
 /* Minimal clickable behavior: use only Waybar-safe properties */
 #clock,
+#bluetooth,
+#custom-keyboard,
 #network {
 }
 
 /* Keep button visuals minimal to avoid unsupported properties */
 #clock button,
+#bluetooth button,
+#custom-keyboard button,
 #network button {
   background: transparent;
   border: none;
