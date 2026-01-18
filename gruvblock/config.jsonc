@@ -12,6 +12,7 @@
     "sway/window",
     "hyprland/workspaces",
     "hyprland/window",
+    "custom/keyboard",
     "tray"
     // "hyprland/submap"
     //"sway/mode"
@@ -22,8 +23,8 @@
   ],
   "modules-right": [
     "network",
+    "custom/vpn",
     "bluetooth",
-    "custom/keyboard",
     "disk",
     "cpu",
     // "custom/cpu_temp",
@@ -218,6 +219,14 @@
     "states": {
       "normal": 25
     }
+  },
+  "custom/vpn": {
+    "exec": "$HOME/.config/omarchy/themes/tagruvu/gruvblock/scripts/vpn_status.sh",
+    "format": "<span color='#202020' bgcolor='#689d6a'>  </span> VPN",
+    "format-off": "<span color='#202020' bgcolor='#ea6962'> 󰒲 </span>",
+    "interval": 2,
+    "on-click": "sh -c 'wg-quick_list=$(ls /etc/wireguard/*.conf 2>/dev/null | head -1 | xargs basename -s .conf); if [ -n \"$wg-quick_list\" ]; then sudo wg-quick toggle \"$wg-quick_list\" 2>/dev/null; fi'",
+    "tooltip": false
   },
   "custom/keyboard": {
     "exec": "$HOME/.config/omarchy/themes/tagruvu/gruvblock/scripts/keyboard_layout.sh",
